@@ -49,7 +49,7 @@ if (!allBrands){
         <h1 className='text-main fw-bold text-center mb-4'>ALL BRANDS</h1>
 
       <div className="row g-4">
-        {allBrands && allBrands.map((brand,index)=>  <div key={index} className="col-md-3">
+        {allBrands && allBrands.map((brand,index)=>  <div key={index} className="col-lg-4 col-md-6">
                   <div type="button" className="card product" data-bs-toggle="modal" data-bs-target={`#exampleModal${index}`}>
                   <img className='card-img-top' src={brand.image} alt="" /> 
                      <div className="card-body">

@@ -85,7 +85,7 @@ async function addWishList(id){
              
               {data?.data.data.map((product,idx)=> {
                 // console.log("product",product.id);
-                return <Col key={idx} xs={4} md={3}>    
+                return <Col key={idx} xs={12} md={6} lg={2}>    
               
              <div className="product pb-4">
                     

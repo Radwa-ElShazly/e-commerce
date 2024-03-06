@@ -59,7 +59,7 @@ if(!allCategories){
     <div className="container my-5">
       <div className="row g-4">
         {allCategories && allCategories.map((category,index)=>{
-               return   <div key={index} className="col-md-4">
+               return   <div key={index} className="col-lg-4 col-md-6">
                   <div className="card product" onClick={()=> getDetailsCategories(category._id)}>
                   <img className={`w-100 ${categoryStyle.image}`}  style={{height:'300px'}} src={category.image} alt={category.name} /> 
                      <div className="card-body">

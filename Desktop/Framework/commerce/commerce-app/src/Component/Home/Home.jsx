@@ -112,7 +112,7 @@ export default function Home() {
           {data?.data.data.map((product, idx) => {
             // console.log("product",product.id);
             return (
-              <Col key={idx} xs={4} md={3}>
+              <Col key={idx} xs={12} md={6} lg={2} >
                 <div className="product pb-4">
                   <Link to={`/ProductDetails/${product.id}`}>
                     <figure>

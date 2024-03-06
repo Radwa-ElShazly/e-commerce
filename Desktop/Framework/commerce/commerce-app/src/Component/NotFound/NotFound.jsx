@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { Helmet } from 'react-helmet'
+import notfoundStyle from './NotFound.module.css';
 
 export default function NotFound() {
   return ( <>
@@ -8,8 +9,8 @@ export default function NotFound() {
         <title>not found</title>
       </Helmet>
 
-       <div className="justify-content-center align-items-center vh-100">
-     <img className ='w-100' src={require('../../assets/finalProject assets/404.png')} alt="" />
+       <div className="justify-content-center align-items-center vh-100 position-relative" >
+     <img className ={`w-100 ${notfoundStyle.image}`} src={require('../../assets/finalProject assets/404.png')} alt="" />
    </div>
   </>
   )

@@ -51,9 +51,7 @@ console.log( "Token in navbar", myToken);
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-               {myToken ? <>
-               
-               <div className="me-5 pe-5 mt-1">
+               {myToken ? <> <div className="me-5 pe-5 mt-1">
                 <Nav
             className=" my-2 my-lg-0 me-5 pe-5"
             style={{ maxHeight: '100px' }}
@@ -66,19 +64,14 @@ console.log( "Token in navbar", myToken);
             <Nav.Link className='text-muted font-sm' as={Link} to="/allorders">All Orders</Nav.Link>     
             <Nav.Link className='text-muted font-sm' as={Link} to="/categories">Categories</Nav.Link>
             <Nav.Link className='text-muted font-sm me-5' as={Link} to="/brands">Brands</Nav.Link>
-          </Nav>                
+               </Nav>                
                </div>
-
-
-                <Nav.Link className='text-muted position-relative me-2' as={Link} to="/cart">
+               <Nav.Link className='text-muted position-relative me-2' as={Link} to="/cart">
             <FontAwesomeIcon icon={faCartPlus} className='mt-1 text-muted fs-5'/>
                {/* <Badge className="bg-secondary position-absolute start-50 bottom-50">{numOfCartItems ?? ''}</Badge> */}
                <Badge className="bg-success position-absolute start-50 bottom-50">{numOfCartItems ? numOfCartItems:''}</Badge>
                <span className="visually-hidden">unread messages</span>
             </Nav.Link>
-
-
-
                <div className="myIcon mt-1">
               <ul className='list-unstyled d-flex'>
 
@@ -104,9 +97,9 @@ console.log( "Token in navbar", myToken);
                 </li>
               </ul>
             </div>
-
                <Nav.Link onClick={logout} role='button' className='text-muted font-sm' as={Link} >logOut</Nav.Link>
             </>
+
               :<>  <Nav.Link className='text-muted font-sm' as={Link} to="/login">Login</Nav.Link>
                      <Nav.Link className='text-muted font-sm' as={Link} to="/register">register</Nav.Link>
                </> 

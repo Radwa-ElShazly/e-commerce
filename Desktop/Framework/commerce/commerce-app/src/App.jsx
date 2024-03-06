@@ -30,11 +30,10 @@ const myRouter = createBrowserRouter([
     path: "/",
     element: <Layout />,
     children: [
-      { index: "true", element: (
-        <ProtectedRoute>
-          <Home />
-        </ProtectedRoute>
-      )},
+      { index: "true", element:<ProtectedRoute>
+      <Home />
+    </ProtectedRoute>},
+      {path: "e-commerce", element: <Register/>},
       { path: "register", element: <Register /> },
       { path: "login", element: <Login /> },
       { path: "forgetPassword", element: <ForgetPassword /> },
