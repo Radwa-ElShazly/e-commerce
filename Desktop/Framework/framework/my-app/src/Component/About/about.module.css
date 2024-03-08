@@ -1,0 +1,31 @@
+.body{
+    background-color: #1abc9c;
+    color: #ffffff;;
+    height:80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fontawesome{
+    position: relative;
+    margin-bottom:15px;
+} 
+.fontawesome::after {
+        position: absolute;
+        content: "";
+        width: 70px;
+        height: 4px;
+        background-color:#ffffff;
+        top:14px;
+        left:30px;
+} 
+.fontawesome::before {
+        position: absolute;
+        content: "";
+        width: 70px;
+        height: 4px;
+        background-color:#fffcfc;
+        top:14px;
+        right:30px;
+      }

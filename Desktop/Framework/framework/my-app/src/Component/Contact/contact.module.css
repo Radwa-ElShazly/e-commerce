@@ -1,0 +1,50 @@
+/* #2c3e50*/
+.mainColor{
+    color:#2c3e50;
+}
+.inputForm{
+    position: relative;
+}
+.secoundColor{
+    color: #1abc9c;
+    position: absolute;
+    opacity:0;
+    bottom:0;
+    transition: all 0.5s;
+}
+.inputForm:hover .secoundColor{
+    opacity:1;
+    bottom:45px;
+}
+
+.fontawesome{
+    position: relative;
+    margin-bottom:15px;
+    color:#2c3e50;
+} 
+.fontawesome::after {
+        position: absolute;
+        content: "";
+        width: 90px;
+        height: 4px;
+        background-color:#2c3e50;
+        top:14px;
+        left:52%;
+      } 
+.fontawesome::before {
+        position: absolute;
+        content: "";
+        width: 90px;
+        height: 4px;
+        background-color:#2c3e50;
+        top:14px;
+        right:52%;
+      }
+      
+.sendButton{
+    background-color:#1abc9c;
+    color: #ffffff;
+    border:none;
+    padding:8px 16px;
+    border-radius:5px;
+  }

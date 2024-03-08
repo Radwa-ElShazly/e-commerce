@@ -1,0 +1,30 @@
+.homePage{
+    background-color:#1abc9c;
+}
+.profileImage{
+ width: 250px;
+}
+
+.fontawesome{
+    position: relative;
+    margin-bottom:15px;
+    color:#ffffff;
+} 
+.fontawesome::after {
+        position: absolute;
+        content: "";
+        width: 80px;
+        height: 4px;
+        background-color:rgb(255, 255, 255);
+        top:12px;
+        left:90px;
+      } 
+.fontawesome::before{
+        position: absolute;
+        content: "";
+        width: 80px;
+        height: 4px;
+        background-color:#ffffff;
+        top:12px;
+        right:90px;
+}
