@@ -1,0 +1,15 @@
+.width{
+    width: 90%;
+    margin: auto;
+    margin-top:40px;
+    margin-bottom:40px;
+}
+.fontSize{
+    font-size: 20px;
+    font-weight: 590;
+}
+.fontPrice{
+    font-size: 19px;
+    font-weight: 590;
+    color: #0aad0a;
+}

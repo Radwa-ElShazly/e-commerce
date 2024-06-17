@@ -1,0 +1,11 @@
+.image{
+    object-fit: cover;
+    object-position: 0% 50%; 
+}
+.width{
+    width: 85%;
+    margin: auto;
+    margin-top:40px;
+    margin-bottom:40px;
+    padding: 0px 50px;
+}
